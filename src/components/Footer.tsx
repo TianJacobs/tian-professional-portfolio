@@ -10,18 +10,15 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-2 mb-6">
             <Code className="h-6 w-6 text-primary" />
-            <p className="text-xl font-bold code-font">Your Name</p>
+            <p className="text-xl font-bold code-font">Tian Jacobs</p>
           </div>
           
           <div className="flex space-x-6 mb-8">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://github.com/BlessedT99" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <Github className="h-5 w-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/tian-jacobs" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <Linkedin className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter className="h-5 w-5" />
             </a>
           </div>
           
@@ -31,7 +28,7 @@ const Footer = () => {
               <span className="text-primary code-font"> /&gt;</span>
             </p>
             <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} Your Name. All rights reserved.
+              &copy; {currentYear} Tian Jacobs. All rights reserved.
             </p>
           </div>
         </div>
