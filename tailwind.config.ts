@@ -20,8 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				poppins: ['Poppins', 'sans-serif'],
-				roboto: ['Roboto', 'sans-serif'],
+				space: ['Space Mono', 'monospace'],
+				inter: ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
