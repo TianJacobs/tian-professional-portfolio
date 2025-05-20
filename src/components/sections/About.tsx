@@ -15,12 +15,14 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="section-subtitle">Professional Summary</h3>
             <p className="text-muted-foreground">
-              As a [your profession] with [X] years of experience, I've developed expertise in [key areas]. 
-              My approach combines analytical thinking with creative problem-solving to deliver exceptional results.
+              Analytically-minded professional entering the workforce with a strong foundation in technical 
+              skills and data analysis capabilities. Proficient in Microsoft Excel, MATLAB, and R Studio, with 
+              additional programming experience in Java and Python.
             </p>
             <p className="text-muted-foreground">
-              Throughout my career, I've focused on [specific focus areas], helping organizations achieve 
-              [specific achievements or outcomes]. I'm particularly passionate about [your passion within the field].
+              Developing knowledge of SQL database queries and Tableau visualization tools. Demonstrates natural 
+              aptitude for teamwork, creativity, problem-solving, and critical thinking through academic projects 
+              and collaborative environments.
             </p>
           </div>
           
@@ -28,12 +30,14 @@ const About = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Professional Bio</h3>
               <p className="text-muted-foreground mb-4">
-                [Your name] is a [professional title] specializing in [specialization]. With a background in [relevant background],
-                [he/she/they] has worked with [types of clients/companies] to [accomplish what].
+                Tian Jacobs is a data analysis professional specializing in extracting meaningful insights from complex datasets.
+                With a strong foundation in technical tools and analytical methodologies, they excel at transforming raw data into
+                actionable information.
               </p>
               <p className="text-muted-foreground">
-                When not [professional activity], you can find [your name] [personal interests or hobbies].
-                [He/She/They] holds [degrees/certifications] from [institutions].
+                Eager to apply technical expertise and analytical mindset to contribute immediate value while growing professionally.
+                Tian combines technical proficiency with strong problem-solving abilities to approach data challenges with creativity
+                and precision.
               </p>
             </CardContent>
           </Card>

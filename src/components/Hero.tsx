@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "I specialize in technology solutions.";
+  const fullText = "I specialize in data analysis.";
   const typingSpeed = 70;
 
   useEffect(() => {
@@ -30,11 +30,11 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full tech-border bg-secondary/50 animate-fade-in">
             <Terminal size={14} className="text-primary" />
-            <span className="text-xs font-semibold">Tech Professional</span>
+            <span className="text-xs font-semibold">Data Analysis Professional</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-            Hello, I'm <span className="text-primary">Your Name</span>
+            Hello, I'm <span className="text-primary">Tian Jacobs</span>
           </h1>
           
           <div className="h-8 mb-8">
