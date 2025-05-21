@@ -1,5 +1,4 @@
-
-import { Book, Award } from "lucide-react";
+import { Book, Award, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,8 @@ const educationItems = [
     institution: "Stellenbosch University",
     duration: "Completed",
     description: "Comprehensive degree in mathematical sciences with focus on mathematical foundations, analytical problem solving, and quantitative reasoning.",
-    gpa: "3.0/4.0"
+    gpa: "3.0/4.0",
+    link: "https://github.com/BlessedT99/Profile/blob/main/Degree.pdf"
   }
 ];
 
@@ -88,7 +88,16 @@ const Education = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="mb-2">{item.description}</p>
-                  <p><span className="font-medium">GPA:</span> <span className="text-muted-foreground">{item.gpa}</span></p>
+                  <p className="mb-4"><span className="font-medium">GPA:</span> <span className="text-muted-foreground">{item.gpa}</span></p>
+                  <a 
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" size="sm">
+                      <GraduationCap className="mr-2 h-4 w-4" /> View Degree
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
