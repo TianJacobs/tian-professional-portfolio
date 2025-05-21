@@ -5,10 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const workExperience = [
   {
-    title: "New Graduate",
-    company: "Seeking Opportunities",
+    title: "Demand Candidate",
+    company: "CAPACITI",
     duration: "Present",
-    description: "Data analysis professional entering the workforce with strong technical foundation and analytical capabilities.",
+    description: "Currently participating in CAPACITI's program to develop tech skills, engage in personal development, and gain valuable work experience in the data analysis field.",
     achievements: [
       "Proficient in Microsoft Excel, MATLAB, and R Studio",
       "Programming experience in Java and Python",
