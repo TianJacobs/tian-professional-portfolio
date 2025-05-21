@@ -1,43 +1,61 @@
 
-import { Book } from "lucide-react";
+import { Book, GraduationCap, Certificate } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
 
 const educationItems = [
   {
-    degree: "Degree Name",
-    institution: "University Name",
-    duration: "Year - Year",
-    description: "Brief description of your studies, focus areas, and any notable projects or distinctions.",
-    gpa: "4.0/4.0"
-  },
-  {
-    degree: "Another Degree Name",
-    institution: "Another University Name",
-    duration: "Year - Year",
-    description: "Brief description of your studies, focus areas, and any notable projects or distinctions.",
-    gpa: "3.9/4.0"
+    degree: "BSc in Mathematical Sciences",
+    institution: "Stellenbosch University",
+    duration: "Completed",
+    description: "Comprehensive degree in mathematical sciences with focus on mathematical foundations, analytical problem solving, and quantitative reasoning.",
+    gpa: "3.0/4.0"
   }
 ];
 
 const certifications = [
   {
-    name: "Certification Name",
-    issuer: "Issuing Organization",
-    date: "Month Year",
-    description: "Brief description of the certification and skills it validates."
+    name: "AI Essentials",
+    issuer: "Intel",
+    date: "2023",
+    description: "Foundational knowledge in artificial intelligence concepts and applications.",
+    link: "https://github.com/BlessedT99/Profile/blob/main/Coursera%20Certificate%20-%20AI%20Essentials.pdf"
   },
   {
-    name: "Another Certification",
-    issuer: "Another Organization",
-    date: "Month Year",
-    description: "Brief description of the certification and skills it validates."
+    name: "AI for Everyone",
+    issuer: "DeepLearning.AI",
+    date: "2023",
+    description: "Non-technical course designed to help understand AI technologies and their business implications.",
+    link: "https://github.com/BlessedT99/Profile/blob/main/Coursera%20Certificate%20-%20AI%20for%20Everyone.pdf"
   },
   {
-    name: "Professional Development Course",
-    issuer: "Training Provider",
-    date: "Month Year",
-    description: "Brief description of what you learned and how it has benefited your career."
+    name: "Intro to Gen AI",
+    issuer: "Google Cloud",
+    date: "2023",
+    description: "Introduction to generative AI concepts, applications, and technologies.",
+    link: "https://github.com/BlessedT99/Profile/blob/main/Coursera%20Certificate%20-%20Intro%20to%20Gen%20AI.pdf"
+  },
+  {
+    name: "Verbal Communication and Presentation Skills",
+    issuer: "Starweaver",
+    date: "2023",
+    description: "Development of effective verbal communication and presentation techniques for professional settings.",
+    link: "https://github.com/BlessedT99/Profile/blob/main/Coursera%20Certificate%20-%20Verbal%20Communication%20and%20Presentation%20Skills.pdf"
+  },
+  {
+    name: "Writing Professional Emails in English",
+    issuer: "Georgia Institute of Technology",
+    date: "2023",
+    description: "Techniques for crafting professional and effective email communications in English.",
+    link: "https://github.com/BlessedT99/Profile/blob/main/Coursera%20Certificate%20-%20Writing%20Pro%20Emails%20in%20Eng.pdf"
+  },
+  {
+    name: "Introduction to AI",
+    issuer: "IBM",
+    date: "2023",
+    description: "Comprehensive introduction to artificial intelligence concepts, applications, and industry use cases.",
+    link: "https://github.com/BlessedT99/Profile/blob/main/Coursera%20certificate%20-%20Intro%20to%20AI.pdf"
   }
 ];
 
@@ -89,7 +107,16 @@ const Education = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p>{cert.description}</p>
+                  <p className="mb-4">{cert.description}</p>
+                  <a 
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" size="sm">
+                      <Certificate className="mr-2 h-4 w-4" /> View Certificate
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
