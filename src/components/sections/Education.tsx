@@ -1,5 +1,5 @@
 
-import { Book, GraduationCap, Certificate } from "lucide-react";
+import { Book, Award } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -114,7 +114,7 @@ const Education = () => {
                     rel="noopener noreferrer"
                   >
                     <Button variant="outline" size="sm">
-                      <Certificate className="mr-2 h-4 w-4" /> View Certificate
+                      <Award className="mr-2 h-4 w-4" /> View Certificate
                     </Button>
                   </a>
                 </CardContent>
