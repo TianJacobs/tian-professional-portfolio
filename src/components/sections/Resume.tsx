@@ -1,29 +1,18 @@
 
-import { FileText } from "lucide-react";
+import { FileText, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const workExperience = [
   {
-    title: "Job Title",
-    company: "Company Name",
-    duration: "Month Year - Present",
-    description: "Brief description of your role, responsibilities, and notable achievements.",
+    title: "New Graduate",
+    company: "Seeking Opportunities",
+    duration: "Present",
+    description: "Data analysis professional entering the workforce with strong technical foundation and analytical capabilities.",
     achievements: [
-      "Specific achievement with measurable results",
-      "Another major accomplishment that demonstrates your skills",
-      "Additional example of your valuable contributions"
-    ]
-  },
-  {
-    title: "Previous Job Title",
-    company: "Previous Company",
-    duration: "Month Year - Month Year",
-    description: "Brief description of your role, responsibilities, and notable achievements.",
-    achievements: [
-      "Specific achievement with measurable results",
-      "Another major accomplishment that demonstrates your skills",
-      "Additional example of your valuable contributions"
+      "Proficient in Microsoft Excel, MATLAB, and R Studio",
+      "Programming experience in Java and Python",
+      "Developing knowledge of SQL database queries and Tableau visualization"
     ]
   }
 ];
@@ -39,13 +28,20 @@ const Resume = () => {
         
         <div className="mb-12">
           <div className="flex justify-center mb-8">
-            <Button size="lg">
-              <FileText className="mr-2 h-4 w-4" /> Download Full Resume
-            </Button>
+            <a 
+              href="https://github.com/BlessedT99/Profile/blob/main/CV%20Tian%20Josh%20Jacobs.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button size="lg">
+                <Download className="mr-2 h-4 w-4" /> Download Full Resume
+              </Button>
+            </a>
           </div>
           
           <div className="space-y-8">
-            <h3 className="section-subtitle text-center">Work Experience</h3>
+            <h3 className="section-subtitle text-center">Professional Profile</h3>
             
             {workExperience.map((job, index) => (
               <Card key={index}>
@@ -60,7 +56,7 @@ const Resume = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4">{job.description}</p>
-                  <h4 className="font-semibold mb-2">Key Achievements:</h4>
+                  <h4 className="font-semibold mb-2">Key Skills:</h4>
                   <ul className="list-disc pl-5 space-y-1">
                     {job.achievements.map((achievement, i) => (
                       <li key={i} className="text-muted-foreground">{achievement}</li>
