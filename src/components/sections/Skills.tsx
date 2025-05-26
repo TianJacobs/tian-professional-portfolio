@@ -12,12 +12,19 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    category: "Technical Skills",
+    category: "Data Analysis & Programming",
     skills: [
-      { name: "Skill Name 1", level: 90 },
-      { name: "Skill Name 2", level: 85 },
-      { name: "Skill Name 3", level: 75 },
-      { name: "Skill Name 4", level: 80 },
+      { name: "MATLAB", level: 70 },
+      { name: "R Studio", level: 70 },
+      { name: "Microsoft SQL", level: 40 },
+      { name: "Tableau", level: 40 },
+    ]
+  },
+  {
+    category: "Microsoft Office Suite",
+    skills: [
+      { name: "Microsoft Excel", level: 70 },
+      { name: "Microsoft Word", level: 70 },
     ]
   },
   {
@@ -27,15 +34,6 @@ const skillCategories: SkillCategory[] = [
       { name: "Leadership", level: 85 },
       { name: "Problem Solving", level: 90 },
       { name: "Time Management", level: 80 },
-    ]
-  },
-  {
-    category: "Tools & Software",
-    skills: [
-      { name: "Software 1", level: 95 },
-      { name: "Software 2", level: 80 },
-      { name: "Software 3", level: 85 },
-      { name: "Software 4", level: 70 },
     ]
   }
 ];
