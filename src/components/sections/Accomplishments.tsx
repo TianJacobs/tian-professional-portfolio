@@ -5,24 +5,29 @@ import { Card, CardContent } from "@/components/ui/card";
 interface Accomplishment {
   title: string;
   description: string;
+  inProgress?: boolean;
 }
 
 const accomplishmentsData: Accomplishment[] = [
   {
-    title: "Achievement Title 1",
-    description: "Detailed explanation of the accomplishment and its significance in your professional journey."
+    title: "Accomplishment Coming Soon",
+    description: "Currently working on achieving significant milestones in my professional journey. Stay tuned for updates.",
+    inProgress: true
   },
   {
-    title: "Achievement Title 2",
-    description: "Detailed explanation of the accomplishment and its significance in your professional journey."
+    title: "Achievement in Progress",
+    description: "Actively pursuing new accomplishments and professional development goals. More details to follow.",
+    inProgress: true
   },
   {
-    title: "Achievement Title 3",
-    description: "Detailed explanation of the accomplishment and its significance in your professional journey."
+    title: "Future Achievement",
+    description: "Working towards meaningful accomplishments that will showcase growth and expertise in my field.",
+    inProgress: true
   },
   {
-    title: "Achievement Title 4",
-    description: "Detailed explanation of the accomplishment and its significance in your professional journey."
+    title: "Upcoming Milestone",
+    description: "Focused on reaching important career milestones and professional achievements. Updates coming soon.",
+    inProgress: true
   }
 ];
 
@@ -37,10 +42,15 @@ const Accomplishments = () => {
         
         <div className="grid sm:grid-cols-2 gap-6">
           {accomplishmentsData.map((item, index) => (
-            <Card key={index} className="bg-muted/50">
+            <Card key={index} className={`${item.inProgress ? 'bg-muted/30 opacity-75' : 'bg-muted/50'}`}>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
                 <p className="text-muted-foreground">{item.description}</p>
+                {item.inProgress && (
+                  <span className="inline-block mt-3 text-xs bg-muted text-muted-foreground px-2.5 py-1 rounded">
+                    Work in Progress
+                  </span>
+                )}
               </CardContent>
             </Card>
           ))}

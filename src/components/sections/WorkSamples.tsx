@@ -8,6 +8,7 @@ interface WorkItem {
   description: string;
   tags: string[];
   link?: string;
+  comingSoon?: boolean;
 }
 
 const workItems: WorkItem[] = [
@@ -18,22 +19,22 @@ const workItems: WorkItem[] = [
     link: "https://techtitans.liveblog365.com/?i=1"
   },
   {
-    title: "Project Name 2",
-    description: "Brief description of the project, what was accomplished, and your specific role and contributions.",
-    tags: ["Skill 1", "Skill 4", "Skill 5"],
-    link: "#"
+    title: "Project Coming Soon",
+    description: "Exciting new project currently in development. Stay tuned for updates on this innovative solution.",
+    tags: ["Work in Progress"],
+    comingSoon: true
   },
   {
-    title: "Project Name 3",
-    description: "Brief description of the project, what was accomplished, and your specific role and contributions.",
-    tags: ["Skill 2", "Skill 6", "Skill 7"],
-    link: "#"
+    title: "Project Coming Soon",
+    description: "Another exciting project in the pipeline. More details will be available soon.",
+    tags: ["Work in Progress"],
+    comingSoon: true
   },
   {
-    title: "Project Name 4",
-    description: "Brief description of the project, what was accomplished, and your specific role and contributions.",
-    tags: ["Skill 3", "Skill 5", "Skill 8"],
-    link: "#"
+    title: "Project Coming Soon",
+    description: "Future project currently being planned and developed. Check back for updates.",
+    tags: ["Work in Progress"],
+    comingSoon: true
   },
 ];
 
@@ -48,7 +49,7 @@ const WorkSamples = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {workItems.map((item, index) => (
-            <Card key={index} className="overflow-hidden transition-all hover:shadow-md">
+            <Card key={index} className={`overflow-hidden transition-all hover:shadow-md ${item.comingSoon ? 'opacity-75' : ''}`}>
               <CardHeader className="bg-muted/50">
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
@@ -56,18 +57,25 @@ const WorkSamples = () => {
                 <CardDescription className="text-base mb-4">{item.description}</CardDescription>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {item.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="bg-secondary text-secondary-foreground text-xs px-2.5 py-1 rounded">
+                    <span key={tagIndex} className={`text-xs px-2.5 py-1 rounded ${item.comingSoon ? 'bg-muted text-muted-foreground' : 'bg-secondary text-secondary-foreground'}`}>
                       {tag}
                     </span>
                   ))}
                 </div>
               </CardContent>
-              {item.link && (
+              {item.link && !item.comingSoon && (
                 <CardFooter>
                   <Button variant="outline" size="sm" asChild>
                     <a href={item.link} target="_blank" rel="noopener noreferrer">
                       View Project
                     </a>
+                  </Button>
+                </CardFooter>
+              )}
+              {item.comingSoon && (
+                <CardFooter>
+                  <Button variant="outline" size="sm" disabled>
+                    Coming Soon
                   </Button>
                 </CardFooter>
               )}
