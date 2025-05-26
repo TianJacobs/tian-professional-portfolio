@@ -1,12 +1,11 @@
 
 import { Star } from "lucide-react";
-import { Progress } from "@/components/ui/progress";
 
 interface SkillCategory {
   category: string;
   skills: {
     name: string;
-    level: number;
+    level: string;
   }[];
 }
 
@@ -14,26 +13,28 @@ const skillCategories: SkillCategory[] = [
   {
     category: "Data Analysis & Programming",
     skills: [
-      { name: "MATLAB", level: 70 },
-      { name: "R Studio", level: 70 },
-      { name: "Microsoft SQL", level: 40 },
-      { name: "Tableau", level: 40 },
+      { name: "MATLAB", level: "Intermediate" },
+      { name: "R Studio", level: "Intermediate" },
+      { name: "Java", level: "Intermediate" },
+      { name: "Python", level: "Intermediate" },
+      { name: "Microsoft SQL", level: "Beginner" },
+      { name: "Tableau", level: "Beginner" },
     ]
   },
   {
     category: "Microsoft Office Suite",
     skills: [
-      { name: "Microsoft Excel", level: 70 },
-      { name: "Microsoft Word", level: 70 },
+      { name: "Microsoft Excel", level: "Intermediate" },
+      { name: "Microsoft Word", level: "Intermediate" },
     ]
   },
   {
     category: "Soft Skills",
     skills: [
-      { name: "Communication", level: 95 },
-      { name: "Leadership", level: 85 },
-      { name: "Problem Solving", level: 90 },
-      { name: "Time Management", level: 80 },
+      { name: "Communication", level: "Advanced" },
+      { name: "Leadership", level: "Advanced" },
+      { name: "Problem Solving", level: "Advanced" },
+      { name: "Time Management", level: "Intermediate" },
     ]
   }
 ];
@@ -53,12 +54,11 @@ const Skills = () => {
               <h3 className="section-subtitle mb-6">{category.category}</h3>
               <div className="space-y-6">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between mb-2">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <Progress value={skill.level} className="h-2" />
+                  <div key={skillIndex} className="flex justify-between items-center">
+                    <span className="font-medium">{skill.name}</span>
+                    <span className="text-muted-foreground bg-muted px-3 py-1 rounded-full text-sm">
+                      {skill.level}
+                    </span>
                   </div>
                 ))}
               </div>
