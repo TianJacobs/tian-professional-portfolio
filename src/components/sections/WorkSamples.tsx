@@ -12,10 +12,10 @@ interface WorkItem {
 
 const workItems: WorkItem[] = [
   {
-    title: "Project Name 1",
-    description: "Brief description of the project, what was accomplished, and your specific role and contributions.",
-    tags: ["Skill 1", "Skill 2", "Skill 3"],
-    link: "#"
+    title: "Tech Titans Website",
+    description: "Developed a professional website using Profreehost domain hosting and WordPress for layout design. Leveraged AI tools for content creation and design optimization, then integrated a custom chatbot using CSS and JavaScript plugins to enhance user interaction and engagement.",
+    tags: ["WordPress", "CSS", "JavaScript", "AI Integration", "Chatbot Development"],
+    link: "https://techtitans.liveblog365.com/?i=1"
   },
   {
     title: "Project Name 2",
