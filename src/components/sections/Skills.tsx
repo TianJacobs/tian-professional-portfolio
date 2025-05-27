@@ -1,4 +1,5 @@
 
+
 import { Star } from "lucide-react";
 
 interface SkillCategory {
@@ -31,10 +32,11 @@ const skillCategories: SkillCategory[] = [
   {
     category: "Soft Skills",
     skills: [
-      { name: "Communication", level: "Advanced" },
-      { name: "Leadership", level: "Advanced" },
       { name: "Problem Solving", level: "Advanced" },
-      { name: "Time Management", level: "Intermediate" },
+      { name: "Critical Thinking", level: "Intermediate" },
+      { name: "Adaptability", level: "Intermediate" },
+      { name: "Teamwork", level: "Intermediate" },
+      { name: "Creativity", level: "Intermediate" },
     ]
   }
 ];
@@ -71,3 +73,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
