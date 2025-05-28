@@ -1,4 +1,3 @@
-
 import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,10 +18,9 @@ const workItems: WorkItem[] = [
     link: "https://techtitans.liveblog365.com/?i=1"
   },
   {
-    title: "Project Coming Soon",
-    description: "Exciting new project currently in development. Stay tuned for updates on this innovative solution.",
-    tags: ["Work in Progress"],
-    comingSoon: true
+    title: "Intelligent Chatbot with Dialogflow",
+    description: "Built an intelligent chatbot using Dialogflow Essentials for natural language processing and intent recognition. Integrated Firebase to handle all query requests from users by matching the intents created in Dialogflow Essentials, providing seamless conversational experiences.",
+    tags: ["Dialogflow Essentials", "Firebase", "Natural Language Processing", "Intent Recognition", "Cloud Integration"]
   },
   {
     title: "Project Coming Soon",
