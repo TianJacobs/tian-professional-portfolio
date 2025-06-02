@@ -70,6 +70,20 @@ const certifications = [
     date: "2023",
     description: "Development of active listening skills for improved communication and interpersonal relationships.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Active%20Listening.pdf?alt=media&token=1f3a3829-bdb7-44a9-95e5-ed77a96d94e8"
+  },
+  {
+    name: "Developing Interpersonal Skills",
+    issuer: "IBM",
+    date: "2023",
+    description: "Development of essential interpersonal skills for effective collaboration and professional relationships.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Developing%20Interpersonal%20Skills.pdf?alt=media&token=a1e56561-2cbb-4aba-b3e6-7d2b460823a6"
+  },
+  {
+    name: "Building AI Powered Chatbots Without Programming",
+    issuer: "IBM",
+    date: "2023",
+    description: "Learn to build AI-powered chatbots using no-code platforms and conversational AI technologies.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Building%20AI%20Powered%20Chatbots%20Without%20Programming.pdf?alt=media&token=dcb1963c-1e83-4cd7-bb54-e54fd5ba8b00"
   }
 ];
 
