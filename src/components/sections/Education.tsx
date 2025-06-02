@@ -1,4 +1,3 @@
-
 import { Book, Award, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -11,7 +10,7 @@ const educationItems = [
     duration: "Completed",
     description: "Comprehensive degree in mathematical sciences with focus on mathematical foundations, analytical problem solving, and quantitative reasoning.",
     gpa: "3.0/4.0",
-    link: "https://github.com/BlessedT99/Profile/blob/main/Degree.pdf"
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Degree.pdf?alt=media&token=e2dd275d-749e-4072-906c-6481458ddfd9"
   }
 ];
 
