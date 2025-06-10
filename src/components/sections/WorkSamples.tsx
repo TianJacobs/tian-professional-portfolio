@@ -1,3 +1,4 @@
+
 import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,12 @@ const workItems: WorkItem[] = [
     link: "https://techtitans.liveblog365.com/?i=1"
   },
   {
+    title: "Virtual Health Assistant App Prototype",
+    description: "Collaborated with my Tech Titans team to design and build a comprehensive mock-up of a virtual health assistant mobile application using Mockplus. The prototype demonstrates user-friendly interfaces for health monitoring, appointment scheduling, and AI-powered health consultations.",
+    tags: ["Mockplus", "UI/UX Design", "Mobile App Prototype", "Healthcare Technology", "Team Collaboration"],
+    link: "https://rp.mockplus.com/run/KD0aLF4xJD/CsQvqgHSeC/1Q73yrA5qw?cps=expand&rps=expand&nav=1&ha=0&la=0&fc=1&dt=iphone&out=0&rt=1&as=true"
+  },
+  {
     title: "Intelligent Chatbot with Dialogflow",
     description: "Built an intelligent chatbot using Dialogflow Essentials for natural language processing and intent recognition. Integrated Firebase to handle all query requests from users by matching the intents created in Dialogflow Essentials, providing seamless conversational experiences.",
     tags: ["Dialogflow Essentials", "Firebase", "Natural Language Processing", "Intent Recognition", "Cloud Integration"],
@@ -26,12 +33,6 @@ const workItems: WorkItem[] = [
   {
     title: "Project Coming Soon",
     description: "Another exciting project in the pipeline. More details will be available soon.",
-    tags: ["Work in Progress"],
-    comingSoon: true
-  },
-  {
-    title: "Project Coming Soon",
-    description: "Future project currently being planned and developed. Check back for updates.",
     tags: ["Work in Progress"],
     comingSoon: true
   },
