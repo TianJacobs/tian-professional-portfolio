@@ -13,6 +13,12 @@ interface WorkItem {
 
 const workItems: WorkItem[] = [
   {
+    title: "Math Solver Website",
+    description: "Developed a comprehensive math solver web application with frontend hosted on Vercel and backend on Render. Features include solving various mathematical equations, providing step-by-step solutions, and a history feature to track previous calculations for enhanced user experience.",
+    tags: ["Frontend Development", "Backend Development", "Vercel", "Render", "Math Algorithms", "History Feature"],
+    link: "https://math-solver2.vercel.app/"
+  },
+  {
     title: "Tech Titans Website",
     description: "Developed a professional website using Profreehost domain hosting and WordPress for layout design. Leveraged AI tools for content creation and design optimization, then integrated a custom chatbot using CSS and JavaScript plugins to enhance user interaction and engagement.",
     tags: ["WordPress", "CSS", "JavaScript", "AI Integration", "Chatbot Development"],
