@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Send, X, User, Bot, ExternalLink } from 'lucide-react';
 
@@ -370,9 +369,6 @@ const TianChatbot = () => {
                 <Send size={16} />
               </button>
             </div>
-            <p className="text-xs text-slate-400 mt-2 text-center">
-              Powered by Tian's AI Assistant 🤖
-            </p>
           </div>
         </div>
       )}
