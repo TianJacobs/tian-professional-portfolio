@@ -10,6 +10,7 @@ import Education from "@/components/sections/Education";
 import Accomplishments from "@/components/sections/Accomplishments";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/Footer";
+import TianChatbot from "@/components/TianChatbot";
 
 const Index = () => {
   // Scroll to the section if the URL contains a hash
@@ -35,6 +36,7 @@ const Index = () => {
       <Accomplishments />
       <Contact />
       <Footer />
+      <TianChatbot />
     </div>
   );
 };
