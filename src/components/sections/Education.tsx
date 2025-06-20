@@ -8,7 +8,7 @@ const educationItems = [
   {
     degree: "BSc in Mathematical Sciences",
     institution: "Stellenbosch University",
-    duration: "Completed",
+    duration: "Completed 2023",
     description: "Comprehensive degree in mathematical sciences with focus on mathematical foundations, analytical problem solving, and quantitative reasoning.",
     gpa: "3.0/4.0",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Degree.pdf?alt=media&token=e2dd275d-749e-4072-906c-6481458ddfd9"
@@ -43,6 +43,13 @@ const certifications = [
     date: "June 12, 2025",
     description: "Advanced course covering generative AI technologies and large language model applications in real-world scenarios.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Generative%20AI%20with%20Large%20Language%20Models.pdf?alt=media&token=e0c48dbd-ff56-41ff-80d3-01bf1d4428e8"
+  },
+  {
+    name: "AI and Public Health",
+    issuer: "DeepLearning.AI",
+    date: "June 19, 2025",
+    description: "Comprehensive course on the intersection of artificial intelligence and public health applications.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20AI%20and%20Public%20Health.pdf?alt=media&token=abfd28b7-85b4-4598-8772-a7b56ec1bbaa"
   },
   {
     name: "Verbal Communication and Presentation Skills",
@@ -85,6 +92,13 @@ const certifications = [
     date: "June 17, 2025",
     description: "Certificate in digital learning methodologies and online education best practices.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/digital_certificate_YES.pdf?alt=media&token=4cdc6ed4-a84d-4e2f-948c-01b2b6111baa"
+  },
+  {
+    name: "Entrepreneurship",
+    issuer: "YES (Youth Employment Service)",
+    date: "June 20, 2025",
+    description: "Comprehensive certificate in entrepreneurship fundamentals and business development strategies.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/entrepreneurship_certificate_YES.pdf?alt=media&token=5aa23060-0490-4290-8f7a-243c609c3e5f"
   },
   {
     name: "Introduction to AI",

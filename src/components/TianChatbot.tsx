@@ -23,7 +23,7 @@ const TianChatbot = () => {
       email: "tianjosh25@gmail.com",
       phone: "064 684 1557",
       bio: "Data analysis professional with strong foundation in technical skills and analytical capabilities. Specializes in extracting meaningful insights from complex datasets.",
-      education: "BSc in Mathematical Sciences from Stellenbosch University (GPA: 3.0/4.0)",
+      education: "BSc in Mathematical Sciences from Stellenbosch University (GPA: 3.0/4.0) - Completed 2023",
       journey: "Born and raised in Kuils River, attended De Kuilen Primary and High School, studied at Stellenbosch University, now participating in CAPACITI's demand program."
     },
     skills: {
@@ -79,6 +79,7 @@ const TianChatbot = () => {
       { name: "Python for Data Science, AI & Development", provider: "IBM", date: "May 30, 2025", category: "AI" },
       { name: "Building AI Powered Chatbots Without Programming", provider: "IBM", date: "June 2, 2025", category: "AI" },
       { name: "Generative AI with Large Language Models", provider: "AWS and DeepLearning.AI", date: "June 12, 2025", category: "AI" },
+      { name: "AI and Public Health", provider: "DeepLearning.AI", date: "June 19, 2025", category: "AI" },
       { name: "Verbal Communication and Presentation Skills", provider: "Starweaver", date: "May 19, 2025", category: "Communication" },
       { name: "Writing Professional Emails in English", provider: "Georgia Institute of Technology", date: "May 19, 2025", category: "Communication" },
       { name: "Active Listening", provider: "Coursera", date: "May 30, 2025", category: "Communication" },
@@ -86,7 +87,8 @@ const TianChatbot = () => {
       { name: "Emotional Intelligence", provider: "Arizona State University", date: "June 17, 2025", category: "Communication" },
       { name: "Time Management for Personal & Professional Productivity", provider: "Division of Continuing Education", date: "June 13, 2025", category: "Professional Development" },
       { name: "Work Readiness", provider: "YES (Youth Employment Service)", date: "June 16, 2025", category: "Professional Development" },
-      { name: "Digital Learning", provider: "YES (Youth Employment Service)", date: "June 17, 2025", category: "Professional Development" }
+      { name: "Digital Learning", provider: "YES (Youth Employment Service)", date: "June 17, 2025", category: "Professional Development" },
+      { name: "Entrepreneurship", provider: "YES (Youth Employment Service)", date: "June 20, 2025", category: "Professional Development" }
     ],
     links: {
       resume: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/CV%20Tian%20Josh%20Jacobs.pdf?alt=media&token=d984645a-28f1-4d50-a8aa-701fadc1f632",
@@ -167,7 +169,7 @@ const TianChatbot = () => {
       
       return {
         type: 'certificates',
-        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (7 certificates):**\n${aiCerts}\n\n**Communication Skills (5 certificates):**\n${commCerts}\n\n**Professional Development (3 certificates):**\n${profCerts}\n\n**Total:** 15 certificates completed between May-June 2025`
+        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (8 certificates):**\n${aiCerts}\n\n**Communication Skills (5 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 17 certificates completed between May-June 2025`
       };
     }
 
@@ -183,7 +185,7 @@ const TianChatbot = () => {
     if (q.includes('ai') || q.includes('data') || q.includes('python') || q.includes('machine learning')) {
       return {
         type: 'ai_expertise',
-        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 7 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, and IBM\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
+        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 8 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, and IBM\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• AI and Public Health applications\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
       };
     }
 
