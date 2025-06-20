@@ -38,6 +38,13 @@ const certifications = [
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Intro%20to%20Gen%20AI.pdf?alt=media&token=eac7177c-a9a9-4607-af49-dbdda3b1c65a"
   },
   {
+    name: "Generative AI with Large Language Models",
+    issuer: "AWS and DeepLearning.AI",
+    date: "June 12, 2025",
+    description: "Advanced course covering generative AI technologies and large language model applications in real-world scenarios.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Generative%20AI%20with%20Large%20Language%20Models.pdf?alt=media&token=e0c48dbd-ff56-41ff-80d3-01bf1d4428e8"
+  },
+  {
     name: "Verbal Communication and Presentation Skills",
     issuer: "Starweaver",
     date: "May 19, 2025",
@@ -50,6 +57,34 @@ const certifications = [
     date: "May 19, 2025",
     description: "Techniques for crafting professional and effective email communications in English.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Writing%20Pro%20Emails%20in%20Eng.pdf?alt=media&token=09caa4df-b15a-480f-add6-9fadba4e5493"
+  },
+  {
+    name: "Emotional Intelligence",
+    issuer: "Arizona State University",
+    date: "June 17, 2025",
+    description: "Development of emotional intelligence skills for better interpersonal relationships and workplace effectiveness.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Emotional%20Intelligence.pdf?alt=media&token=98711ff6-33c9-4d6d-9924-ba4407b581da"
+  },
+  {
+    name: "Time Management for Personal & Professional Productivity",
+    issuer: "Division of Continuing Education",
+    date: "June 13, 2025",
+    description: "Comprehensive course on time management strategies and productivity techniques for personal and professional success.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20Time%20Management%20for%20Personal%20%26%20Professional.pdf?alt=media&token=c1d068ac-4921-48dc-babb-c5351ccde0b2"
+  },
+  {
+    name: "Work Readiness",
+    issuer: "YES (Youth Employment Service)",
+    date: "June 16, 2025",
+    description: "Digital learning certificate focused on developing essential work readiness skills and professional preparation.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/work_readiness_certificate_YES.pdf?alt=media&token=fa20b913-dcd1-471c-bee5-c3c3f82fcd5c"
+  },
+  {
+    name: "Digital Learning",
+    issuer: "YES (Youth Employment Service)",
+    date: "June 17, 2025",
+    description: "Certificate in digital learning methodologies and online education best practices.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/digital_certificate_YES.pdf?alt=media&token=4cdc6ed4-a84d-4e2f-948c-01b2b6111baa"
   },
   {
     name: "Introduction to AI",

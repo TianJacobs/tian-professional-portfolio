@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Send, X, User, Bot, ExternalLink } from 'lucide-react';
 
@@ -50,6 +51,11 @@ const TianChatbot = () => {
         description: "Comprehensive math solver web application with frontend on Vercel, backend on Render, featuring step-by-step solutions and calculation history."
       },
       {
+        name: "Resume Generator",
+        url: "https://resume-generator-eta-lime.vercel.app/",
+        description: "Comprehensive resume generator application with multiple templates (modern, classic, minimal, creative), real-time preview, and PDF download functionality."
+      },
+      {
         name: "Tech Titans Website", 
         url: "https://techtitans.liveblog365.com/?i=1",
         description: "Professional website using WordPress with AI tools for content creation and custom chatbot integration."
@@ -72,10 +78,15 @@ const TianChatbot = () => {
       { name: "Introduction to AI", provider: "IBM", date: "May 19, 2025", category: "AI" },
       { name: "Python for Data Science, AI & Development", provider: "IBM", date: "May 30, 2025", category: "AI" },
       { name: "Building AI Powered Chatbots Without Programming", provider: "IBM", date: "June 2, 2025", category: "AI" },
+      { name: "Generative AI with Large Language Models", provider: "AWS and DeepLearning.AI", date: "June 12, 2025", category: "AI" },
       { name: "Verbal Communication and Presentation Skills", provider: "Starweaver", date: "May 19, 2025", category: "Communication" },
       { name: "Writing Professional Emails in English", provider: "Georgia Institute of Technology", date: "May 19, 2025", category: "Communication" },
       { name: "Active Listening", provider: "Coursera", date: "May 30, 2025", category: "Communication" },
-      { name: "Developing Interpersonal Skills", provider: "IBM", date: "June 2, 2025", category: "Communication" }
+      { name: "Developing Interpersonal Skills", provider: "IBM", date: "June 2, 2025", category: "Communication" },
+      { name: "Emotional Intelligence", provider: "Arizona State University", date: "June 17, 2025", category: "Communication" },
+      { name: "Time Management for Personal & Professional Productivity", provider: "Division of Continuing Education", date: "June 13, 2025", category: "Professional Development" },
+      { name: "Work Readiness", provider: "YES (Youth Employment Service)", date: "June 16, 2025", category: "Professional Development" },
+      { name: "Digital Learning", provider: "YES (Youth Employment Service)", date: "June 17, 2025", category: "Professional Development" }
     ],
     links: {
       resume: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/CV%20Tian%20Josh%20Jacobs.pdf?alt=media&token=d984645a-28f1-4d50-a8aa-701fadc1f632",
@@ -149,10 +160,14 @@ const TianChatbot = () => {
         .filter(c => c.category === 'Communication')
         .map(c => `• **${c.name}** - ${c.provider} (${c.date})`)
         .join('\n');
+      const profCerts = knowledgeBase.certificates
+        .filter(c => c.category === 'Professional Development')
+        .map(c => `• **${c.name}** - ${c.provider} (${c.date})`)
+        .join('\n');
       
       return {
         type: 'certificates',
-        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (6 certificates):**\n${aiCerts}\n\n**Communication Skills (4 certificates):**\n${commCerts}\n\n**Total:** 10 certificates completed between May-June 2025`
+        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (7 certificates):**\n${aiCerts}\n\n**Communication Skills (5 certificates):**\n${commCerts}\n\n**Professional Development (3 certificates):**\n${profCerts}\n\n**Total:** 15 certificates completed between May-June 2025`
       };
     }
 
@@ -168,7 +183,7 @@ const TianChatbot = () => {
     if (q.includes('ai') || q.includes('data') || q.includes('python') || q.includes('machine learning')) {
       return {
         type: 'ai_expertise',
-        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 6 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, and IBM\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
+        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 7 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, and IBM\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
       };
     }
 

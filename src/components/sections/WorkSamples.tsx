@@ -19,6 +19,12 @@ const workItems: WorkItem[] = [
     link: "https://math-solver2.vercel.app/"
   },
   {
+    title: "Resume Generator",
+    description: "Built a comprehensive resume generator application that allows users to create professional resumes using multiple templates (modern, classic, minimal, or creative). Features include real-time preview functionality and downloadable PDF generation for enhanced user experience.",
+    tags: ["React", "PDF Generation", "Template Design", "Vercel", "Resume Builder", "Modern UI"],
+    link: "https://resume-generator-eta-lime.vercel.app/"
+  },
+  {
     title: "Tech Titans Website",
     description: "Developed a professional website using Profreehost domain hosting and WordPress for layout design. Leveraged AI tools for content creation and design optimization, then integrated a custom chatbot using CSS and JavaScript plugins to enhance user interaction and engagement.",
     tags: ["WordPress", "CSS", "JavaScript", "AI Integration", "Chatbot Development"],
