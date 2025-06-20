@@ -26,7 +26,7 @@ const About = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Personal Bio</h3>
               <p className="text-muted-foreground">
-                My name is Tian Jacobs. I'm from Kuils River and I've lived there my whole life. I went to school at De Kuilen Primary and then De Kuilen Highschool. After school I studied at University of Stellenbosch and got a BSc in Mathematical Sciences. For my hobbies I like to play video games, playing/watching soccer and watching movies/series. For the CAPACITI stream I chose the Data stream.
+                My name is Tian Jacobs. I'm from Kuils River and I've lived there my whole life. I went to school at De Kuilen Primary and then De Kuilen Highschool. After school I studied at University of Stellenbosch and got a BSc in Mathematical Sciences. For my hobbies I like to play video games, playing/watching soccer and watching movies/series.
               </p>
             </CardContent>
           </Card>
