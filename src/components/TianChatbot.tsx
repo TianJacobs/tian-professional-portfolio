@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Send, X, User, Bot, ExternalLink } from 'lucide-react';
 
@@ -56,6 +55,16 @@ const TianChatbot = () => {
         description: "Comprehensive resume generator application with multiple templates (modern, classic, minimal, creative), real-time preview, and PDF download functionality."
       },
       {
+        name: "AI Image Generator",
+        url: "https://ai-image-generator-five-rouge.vercel.app/",
+        description: "AI-powered image generation application that creates unique images based on text prompts with modern UI and real-time generation capabilities."
+      },
+      {
+        name: "Sentiment Analysis Dashboard",
+        url: "https://sentiment-dashboard-app-dsf5.vercel.app/",
+        description: "Comprehensive sentiment analysis dashboard with interactive data visualization, real-time text analysis, and detailed emotional tone insights."
+      },
+      {
         name: "Tech Titans Website", 
         url: "https://techtitans.liveblog365.com/?i=1",
         description: "Professional website using WordPress with AI tools for content creation and custom chatbot integration."
@@ -80,8 +89,11 @@ const TianChatbot = () => {
       { name: "Building AI Powered Chatbots Without Programming", provider: "IBM", date: "June 2, 2025", category: "AI" },
       { name: "Generative AI with Large Language Models", provider: "AWS and DeepLearning.AI", date: "June 12, 2025", category: "AI" },
       { name: "AI and Public Health", provider: "DeepLearning.AI", date: "June 19, 2025", category: "AI" },
+      { name: "AI and Climate Change", provider: "DeepLearning.AI", date: "June 26, 2025", category: "AI" },
+      { name: "AI and Disaster Management", provider: "DeepLearning.AI", date: "June 27, 2025", category: "AI" },
       { name: "Verbal Communication and Presentation Skills", provider: "Starweaver", date: "May 19, 2025", category: "Communication" },
       { name: "Writing Professional Emails in English", provider: "Georgia Institute of Technology", date: "May 19, 2025", category: "Communication" },
+      { name: "Finding Your Professional Voice", provider: "University of London", date: "June 23, 2025", category: "Communication" },
       { name: "Active Listening", provider: "Coursera", date: "May 30, 2025", category: "Communication" },
       { name: "Developing Interpersonal Skills", provider: "IBM", date: "June 2, 2025", category: "Communication" },
       { name: "Emotional Intelligence", provider: "Arizona State University", date: "June 17, 2025", category: "Communication" },
@@ -169,7 +181,7 @@ const TianChatbot = () => {
       
       return {
         type: 'certificates',
-        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (8 certificates):**\n${aiCerts}\n\n**Communication Skills (5 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 17 certificates completed between May-June 2025`
+        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (10 certificates):**\n${aiCerts}\n\n**Communication Skills (6 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 20 certificates completed between May-June 2025`
       };
     }
 

@@ -25,6 +25,18 @@ const workItems: WorkItem[] = [
     link: "https://resume-generator-eta-lime.vercel.app/"
   },
   {
+    title: "AI Image Generator",
+    description: "Developed an AI-powered image generation application that creates unique images based on text prompts. Features modern UI design with real-time image generation capabilities and user-friendly interface for creative content creation.",
+    tags: ["AI", "Image Generation", "React", "API Integration", "Modern UI", "Creative Tools"],
+    link: "https://ai-image-generator-five-rouge.vercel.app/"
+  },
+  {
+    title: "Sentiment Analysis Dashboard",
+    description: "Built a comprehensive sentiment analysis dashboard that analyzes text input and provides detailed sentiment insights. Features interactive data visualization, real-time analysis, and user-friendly interface for understanding emotional tone in text data.",
+    tags: ["Data Analysis", "Sentiment Analysis", "Dashboard", "Data Visualization", "React", "Analytics"],
+    link: "https://sentiment-dashboard-app-dsf5.vercel.app/"
+  },
+  {
     title: "Tech Titans Website",
     description: "Developed a professional website using Profreehost domain hosting and WordPress for layout design. Leveraged AI tools for content creation and design optimization, then integrated a custom chatbot using CSS and JavaScript plugins to enhance user interaction and engagement.",
     tags: ["WordPress", "CSS", "JavaScript", "AI Integration", "Chatbot Development"],

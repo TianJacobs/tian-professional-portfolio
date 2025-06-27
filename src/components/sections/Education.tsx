@@ -52,6 +52,20 @@ const certifications = [
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20AI%20and%20Public%20Health.pdf?alt=media&token=abfd28b7-85b4-4598-8772-a7b56ec1bbaa"
   },
   {
+    name: "AI and Climate Change",
+    issuer: "DeepLearning.AI",
+    date: "June 26, 2025",
+    description: "Specialized course focusing on artificial intelligence applications in climate change research and environmental solutions.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20AI%20and%20Climate%20Change.pdf?alt=media&token=a030d2f4-e539-4ea1-90b3-d617dd80963a"
+  },
+  {
+    name: "AI and Disaster Management",
+    issuer: "DeepLearning.AI",
+    date: "June 27, 2025",
+    description: "Advanced course on leveraging artificial intelligence for disaster preparedness, response, and recovery management.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20AI%20and%20Disaster%20Management.pdf?alt=media&token=ba3a9707-f1ee-4838-bb46-153b16125aa2"
+  },
+  {
     name: "Verbal Communication and Presentation Skills",
     issuer: "Starweaver",
     date: "May 19, 2025",
@@ -64,6 +78,13 @@ const certifications = [
     date: "May 19, 2025",
     description: "Techniques for crafting professional and effective email communications in English.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Writing%20Pro%20Emails%20in%20Eng.pdf?alt=media&token=09caa4df-b15a-480f-add6-9fadba4e5493"
+  },
+  {
+    name: "Finding Your Professional Voice",
+    issuer: "University of London",
+    date: "June 23, 2025",
+    description: "Course focused on developing authentic professional communication skills and building confidence in workplace interactions.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate-%20Finding%20Your%20Professional%20Voice.pdf?alt=media&token=d4ddf43a-1b22-49e6-98e3-10e4c42d6bad"
   },
   {
     name: "Emotional Intelligence",
