@@ -1,4 +1,3 @@
-
 import { Book, Award, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -38,32 +37,11 @@ const certifications = [
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Intro%20to%20Gen%20AI.pdf?alt=media&token=eac7177c-a9a9-4607-af49-dbdda3b1c65a"
   },
   {
-    name: "Generative AI with Large Language Models",
-    issuer: "AWS and DeepLearning.AI",
-    date: "June 12, 2025",
-    description: "Advanced course covering generative AI technologies and large language model applications in real-world scenarios.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Generative%20AI%20with%20Large%20Language%20Models.pdf?alt=media&token=e0c48dbd-ff56-41ff-80d3-01bf1d4428e8"
-  },
-  {
-    name: "AI and Public Health",
-    issuer: "DeepLearning.AI",
-    date: "June 19, 2025",
-    description: "Comprehensive course on the intersection of artificial intelligence and public health applications.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20AI%20and%20Public%20Health.pdf?alt=media&token=abfd28b7-85b4-4598-8772-a7b56ec1bbaa"
-  },
-  {
-    name: "AI and Climate Change",
-    issuer: "DeepLearning.AI",
-    date: "June 26, 2025",
-    description: "Specialized course focusing on artificial intelligence applications in climate change research and environmental solutions.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20AI%20and%20Climate%20Change.pdf?alt=media&token=a030d2f4-e539-4ea1-90b3-d617dd80963a"
-  },
-  {
-    name: "AI and Disaster Management",
-    issuer: "DeepLearning.AI",
-    date: "June 27, 2025",
-    description: "Advanced course on leveraging artificial intelligence for disaster preparedness, response, and recovery management.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20AI%20and%20Disaster%20Management.pdf?alt=media&token=ba3a9707-f1ee-4838-bb46-153b16125aa2"
+    name: "Introduction to AI",
+    issuer: "IBM",
+    date: "May 19, 2025",
+    description: "Comprehensive introduction to artificial intelligence concepts, applications, and industry use cases.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20certificate%20-%20Intro%20to%20AI.pdf?alt=media&token=df1d613a-0239-4674-952b-c3c5b2b3506c"
   },
   {
     name: "Verbal Communication and Presentation Skills",
@@ -78,55 +56,6 @@ const certifications = [
     date: "May 19, 2025",
     description: "Techniques for crafting professional and effective email communications in English.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Writing%20Pro%20Emails%20in%20Eng.pdf?alt=media&token=09caa4df-b15a-480f-add6-9fadba4e5493"
-  },
-  {
-    name: "Finding Your Professional Voice",
-    issuer: "University of London",
-    date: "June 23, 2025",
-    description: "Course focused on developing authentic professional communication skills and building confidence in workplace interactions.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate-%20Finding%20Your%20Professional%20Voice.pdf?alt=media&token=d4ddf43a-1b22-49e6-98e3-10e4c42d6bad"
-  },
-  {
-    name: "Emotional Intelligence",
-    issuer: "Arizona State University",
-    date: "June 17, 2025",
-    description: "Development of emotional intelligence skills for better interpersonal relationships and workplace effectiveness.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Emotional%20Intelligence.pdf?alt=media&token=98711ff6-33c9-4d6d-9924-ba4407b581da"
-  },
-  {
-    name: "Time Management for Personal & Professional Productivity",
-    issuer: "Division of Continuing Education",
-    date: "June 13, 2025",
-    description: "Comprehensive course on time management strategies and productivity techniques for personal and professional success.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20Time%20Management%20for%20Personal%20%26%20Professional.pdf?alt=media&token=c1d068ac-4921-48dc-babb-c5351ccde0b2"
-  },
-  {
-    name: "Work Readiness",
-    issuer: "YES (Youth Employment Service)",
-    date: "June 16, 2025",
-    description: "Digital learning certificate focused on developing essential work readiness skills and professional preparation.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/work_readiness_certificate_YES.pdf?alt=media&token=fa20b913-dcd1-471c-bee5-c3c3f82fcd5c"
-  },
-  {
-    name: "Digital Learning",
-    issuer: "YES (Youth Employment Service)",
-    date: "June 17, 2025",
-    description: "Certificate in digital learning methodologies and online education best practices.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/digital_certificate_YES.pdf?alt=media&token=4cdc6ed4-a84d-4e2f-948c-01b2b6111baa"
-  },
-  {
-    name: "Entrepreneurship",
-    issuer: "YES (Youth Employment Service)",
-    date: "June 20, 2025",
-    description: "Comprehensive certificate in entrepreneurship fundamentals and business development strategies.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/entrepreneurship_certificate_YES.pdf?alt=media&token=5aa23060-0490-4290-8f7a-243c609c3e5f"
-  },
-  {
-    name: "Introduction to AI",
-    issuer: "IBM",
-    date: "May 19, 2025",
-    description: "Comprehensive introduction to artificial intelligence concepts, applications, and industry use cases.",
-    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20certificate%20-%20Intro%20to%20AI.pdf?alt=media&token=df1d613a-0239-4674-952b-c3c5b2b3506c"
   },
   {
     name: "Python for Data Science, AI & Development",
@@ -155,6 +84,76 @@ const certifications = [
     date: "June 2, 2025",
     description: "Learn to build AI-powered chatbots using no-code platforms and conversational AI technologies.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Building%20AI%20Powered%20Chatbots%20Without%20Programming.pdf?alt=media&token=dcb1963c-1e83-4cd7-bb54-e54fd5ba8b00"
+  },
+  {
+    name: "Generative AI with Large Language Models",
+    issuer: "AWS and DeepLearning.AI",
+    date: "June 12, 2025",
+    description: "Advanced course covering generative AI technologies and large language model applications in real-world scenarios.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Generative%20AI%20with%20Large%20Language%20Models.pdf?alt=media&token=e0c48dbd-ff56-41ff-80d3-01bf1d4428e8"
+  },
+  {
+    name: "Time Management for Personal & Professional Productivity",
+    issuer: "Division of Continuing Education",
+    date: "June 13, 2025",
+    description: "Comprehensive course on time management strategies and productivity techniques for personal and professional success.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20Time%20Management%20for%20Personal%20%26%20Professional.pdf?alt=media&token=c1d068ac-4921-48dc-babb-c5351ccde0b2"
+  },
+  {
+    name: "Work Readiness",
+    issuer: "YES (Youth Employment Service)",
+    date: "June 16, 2025",
+    description: "Digital learning certificate focused on developing essential work readiness skills and professional preparation.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/work_readiness_certificate_YES.pdf?alt=media&token=fa20b913-dcd1-471c-bee5-c3c3f82fcd5c"
+  },
+  {
+    name: "Digital Learning",
+    issuer: "YES (Youth Employment Service)",
+    date: "June 17, 2025",
+    description: "Certificate in digital learning methodologies and online education best practices.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/digital_certificate_YES.pdf?alt=media&token=4cdc6ed4-a84d-4e2f-948c-01b2b6111baa"
+  },
+  {
+    name: "Emotional Intelligence",
+    issuer: "Arizona State University",
+    date: "June 17, 2025",
+    description: "Development of emotional intelligence skills for better interpersonal relationships and workplace effectiveness.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Emotional%20Intelligence.pdf?alt=media&token=98711ff6-33c9-4d6d-9924-ba4407b581da"
+  },
+  {
+    name: "AI and Public Health",
+    issuer: "DeepLearning.AI",
+    date: "June 19, 2025",
+    description: "Comprehensive course on the intersection of artificial intelligence and public health applications.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20AI%20and%20Public%20Health.pdf?alt=media&token=abfd28b7-85b4-4598-8772-a7b56ec1bbaa"
+  },
+  {
+    name: "Entrepreneurship",
+    issuer: "YES (Youth Employment Service)",
+    date: "June 20, 2025",
+    description: "Comprehensive certificate in entrepreneurship fundamentals and business development strategies.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/entrepreneurship_certificate_YES.pdf?alt=media&token=5aa23060-0490-4290-8f7a-243c609c3e5f"
+  },
+  {
+    name: "Finding Your Professional Voice",
+    issuer: "University of London",
+    date: "June 23, 2025",
+    description: "Course focused on developing authentic professional communication skills and building confidence in workplace interactions.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate-%20Finding%20Your%20Professional%20Voice.pdf?alt=media&token=d4ddf43a-1b22-49e6-98e3-10e4c42d6bad"
+  },
+  {
+    name: "AI and Climate Change",
+    issuer: "DeepLearning.AI",
+    date: "June 26, 2025",
+    description: "Specialized course focusing on artificial intelligence applications in climate change research and environmental solutions.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20AI%20and%20Climate%20Change.pdf?alt=media&token=a030d2f4-e539-4ea1-90b3-d617dd80963a"
+  },
+  {
+    name: "AI and Disaster Management",
+    issuer: "DeepLearning.AI",
+    date: "June 27, 2025",
+    description: "Advanced course on leveraging artificial intelligence for disaster preparedness, response, and recovery management.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20AI%20and%20Disaster%20Management.pdf?alt=media&token=ba3a9707-f1ee-4838-bb46-153b16125aa2"
   }
 ];
 
