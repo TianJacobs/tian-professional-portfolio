@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Send, X, User, Bot, ExternalLink } from 'lucide-react';
 
@@ -81,6 +82,7 @@ const TianChatbot = () => {
       }
     ],
     certificates: [
+      { name: "Introduction to AI", provider: "CAPACITI", date: "May 23, 2025", category: "AI" },
       { name: "AI Essentials", provider: "Intel", date: "May 19, 2025", category: "AI" },
       { name: "AI for Everyone", provider: "DeepLearning.AI", date: "May 19, 2025", category: "AI" },
       { name: "Introduction to Generative AI", provider: "Google Cloud", date: "May 19, 2025", category: "AI" },
@@ -89,14 +91,16 @@ const TianChatbot = () => {
       { name: "Building AI Powered Chatbots Without Programming", provider: "IBM", date: "June 2, 2025", category: "AI" },
       { name: "Generative AI with Large Language Models", provider: "AWS and DeepLearning.AI", date: "June 12, 2025", category: "AI" },
       { name: "AI and Public Health", provider: "DeepLearning.AI", date: "June 19, 2025", category: "AI" },
+      { name: "Foundations of AI and Python Development", provider: "CAPACITI", date: "June 23, 2025", category: "AI" },
       { name: "AI and Climate Change", provider: "DeepLearning.AI", date: "June 26, 2025", category: "AI" },
       { name: "AI and Disaster Management", provider: "DeepLearning.AI", date: "June 27, 2025", category: "AI" },
       { name: "Verbal Communication and Presentation Skills", provider: "Starweaver", date: "May 19, 2025", category: "Communication" },
       { name: "Writing Professional Emails in English", provider: "Georgia Institute of Technology", date: "May 19, 2025", category: "Communication" },
-      { name: "Finding Your Professional Voice", provider: "University of London", date: "June 23, 2025", category: "Communication" },
       { name: "Active Listening", provider: "Coursera", date: "May 30, 2025", category: "Communication" },
       { name: "Developing Interpersonal Skills", provider: "IBM", date: "June 2, 2025", category: "Communication" },
       { name: "Emotional Intelligence", provider: "Arizona State University", date: "June 17, 2025", category: "Communication" },
+      { name: "Finding Your Professional Voice", provider: "University of London", date: "June 23, 2025", category: "Communication" },
+      { name: "Introduction to Personal Branding", provider: "University of Virginia", date: "June 30, 2025", category: "Communication" },
       { name: "Time Management for Personal & Professional Productivity", provider: "Division of Continuing Education", date: "June 13, 2025", category: "Professional Development" },
       { name: "Work Readiness", provider: "YES (Youth Employment Service)", date: "June 16, 2025", category: "Professional Development" },
       { name: "Digital Learning", provider: "YES (Youth Employment Service)", date: "June 17, 2025", category: "Professional Development" },
@@ -181,7 +185,7 @@ const TianChatbot = () => {
       
       return {
         type: 'certificates',
-        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (10 certificates):**\n${aiCerts}\n\n**Communication Skills (6 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 20 certificates completed between May-June 2025`
+        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (12 certificates):**\n${aiCerts}\n\n**Communication Skills (7 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 23 certificates completed between May-June 2025`
       };
     }
 
@@ -197,7 +201,7 @@ const TianChatbot = () => {
     if (q.includes('ai') || q.includes('data') || q.includes('python') || q.includes('machine learning')) {
       return {
         type: 'ai_expertise',
-        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 8 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, and IBM\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• AI and Public Health applications\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
+        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 12 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, IBM, and CAPACITI\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• AI and Public Health applications\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
       };
     }
 

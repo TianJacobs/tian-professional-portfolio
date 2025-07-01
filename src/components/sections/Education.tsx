@@ -16,6 +16,13 @@ const educationItems = [
 
 const certifications = [
   {
+    name: "Introduction to AI",
+    issuer: "CAPACITI",
+    date: "May 23, 2025",
+    description: "Foundational certificate in artificial intelligence concepts and applications from CAPACITI's training program.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Tian%20Jacobs-210206189%20(Quiz%201).pdf?alt=media&token=564a5d9e-2eac-44ee-b5a8-2fa9e9b1a807"
+  },
+  {
     name: "AI Essentials",
     issuer: "Intel",
     date: "May 19, 2025",
@@ -142,6 +149,13 @@ const certifications = [
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate-%20Finding%20Your%20Professional%20Voice.pdf?alt=media&token=d4ddf43a-1b22-49e6-98e3-10e4c42d6bad"
   },
   {
+    name: "Foundations of AI and Python Development",
+    issuer: "CAPACITI",
+    date: "June 23, 2025",
+    description: "Comprehensive certificate covering AI fundamentals and Python development skills from CAPACITI's training program.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Tian%20Jacobs-210206189%20(Quiz%202).pdf?alt=media&token=f39b0e65-bc21-4372-a045-ef27969ed8fd"
+  },
+  {
     name: "AI and Climate Change",
     issuer: "DeepLearning.AI",
     date: "June 26, 2025",
@@ -154,6 +168,13 @@ const certifications = [
     date: "June 27, 2025",
     description: "Advanced course on leveraging artificial intelligence for disaster preparedness, response, and recovery management.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20%20AI%20and%20Disaster%20Management.pdf?alt=media&token=ba3a9707-f1ee-4838-bb46-153b16125aa2"
+  },
+  {
+    name: "Introduction to Personal Branding",
+    issuer: "University of Virginia",
+    date: "June 30, 2025",
+    description: "Comprehensive course on personal branding strategies and professional identity development.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Introduction%20to%20Personal%20Branding.pdf?alt=media&token=4ca35562-634d-48db-bcd1-3656c32831d2"
   }
 ];
 
