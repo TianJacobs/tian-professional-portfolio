@@ -1,3 +1,4 @@
+
 import { Book, Award, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -14,7 +15,7 @@ const educationItems = [
   }
 ];
 
-const certifications = [
+const certificationsRaw = [
   {
     name: "Introduction to AI",
     issuer: "CAPACITI",
@@ -177,6 +178,13 @@ const certifications = [
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Introduction%20to%20Personal%20Branding.pdf?alt=media&token=4ca35562-634d-48db-bcd1-3656c32831d2"
   }
 ];
+
+// Sort certifications by date
+const certifications = certificationsRaw.sort((a, b) => {
+  const dateA = new Date(a.date);
+  const dateB = new Date(b.date);
+  return dateA.getTime() - dateB.getTime();
+});
 
 const Education = () => {
   return (

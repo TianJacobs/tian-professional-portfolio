@@ -9,6 +9,7 @@ interface WorkItem {
   tags: string[];
   link?: string;
   comingSoon?: boolean;
+  image?: string;
 }
 
 const workItems: WorkItem[] = [
@@ -16,43 +17,50 @@ const workItems: WorkItem[] = [
     title: "Math Solver Website",
     description: "Developed a comprehensive math solver web application with frontend hosted on Vercel and backend on Render. Features include solving various mathematical equations, providing step-by-step solutions, and a history feature to track previous calculations for enhanced user experience.",
     tags: ["Frontend Development", "Backend Development", "Vercel", "Render", "Math Algorithms", "History Feature"],
-    link: "https://math-solver2.vercel.app/"
+    link: "https://math-solver2.vercel.app/",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
   },
   {
     title: "Resume Generator",
     description: "Built a comprehensive resume generator application that allows users to create professional resumes using multiple templates (modern, classic, minimal, or creative). Features include real-time preview functionality and downloadable PDF generation for enhanced user experience.",
     tags: ["React", "PDF Generation", "Template Design", "Vercel", "Resume Builder", "Modern UI"],
-    link: "https://resume-generator-eta-lime.vercel.app/"
+    link: "https://resume-generator-eta-lime.vercel.app/",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
   },
   {
     title: "AI Image Generator",
     description: "Developed an AI-powered image generation application that creates unique images based on text prompts. Features modern UI design with real-time image generation capabilities and user-friendly interface for creative content creation.",
     tags: ["AI", "Image Generation", "React", "API Integration", "Modern UI", "Creative Tools"],
-    link: "https://ai-image-generator-five-rouge.vercel.app/"
+    link: "https://ai-image-generator-five-rouge.vercel.app/",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
   },
   {
     title: "Sentiment Analysis Dashboard",
     description: "Built a comprehensive sentiment analysis dashboard that analyzes text input and provides detailed sentiment insights. Features interactive data visualization, real-time analysis, and user-friendly interface for understanding emotional tone in text data.",
     tags: ["Data Analysis", "Sentiment Analysis", "Dashboard", "Data Visualization", "React", "Analytics"],
-    link: "https://sentiment-dashboard-app-dsf5.vercel.app/"
+    link: "https://sentiment-dashboard-app-dsf5.vercel.app/",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
   },
   {
     title: "Tech Titans Website",
     description: "Developed a professional website using Profreehost domain hosting and WordPress for layout design. Leveraged AI tools for content creation and design optimization, then integrated a custom chatbot using CSS and JavaScript plugins to enhance user interaction and engagement.",
     tags: ["WordPress", "CSS", "JavaScript", "AI Integration", "Chatbot Development"],
-    link: "https://techtitans.liveblog365.com/?i=1"
+    link: "https://techtitans.liveblog365.com/?i=1",
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1"
   },
   {
     title: "Virtual Health Assistant App Prototype",
     description: "Collaborated with my Tech Titans team to design and build a comprehensive mock-up of a virtual health assistant mobile application using Mockplus. The prototype demonstrates user-friendly interfaces for health monitoring, appointment scheduling, and AI-powered health consultations.",
     tags: ["Mockplus", "UI/UX Design", "Mobile App Prototype", "Healthcare Technology", "Team Collaboration"],
-    link: "https://rp.mockplus.com/run/KD0aLF4xJD/CsQvqgHSeC/1Q73yrA5qw?cps=expand&rps=expand&nav=1&ha=0&la=0&fc=1&dt=iphone&out=0&rt=1&as=true"
+    link: "https://rp.mockplus.com/run/KD0aLF4xJD/CsQvqgHSeC/1Q73yrA5qw?cps=expand&rps=expand&nav=1&ha=0&la=0&fc=1&dt=iphone&out=0&rt=1&as=true",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
   },
   {
     title: "Intelligent Chatbot with Dialogflow",
     description: "Built an intelligent chatbot using Dialogflow Essentials for natural language processing and intent recognition. Integrated Firebase to handle all query requests from users by matching the intents created in Dialogflow Essentials, providing seamless conversational experiences.",
     tags: ["Dialogflow Essentials", "Firebase", "Natural Language Processing", "Intent Recognition", "Cloud Integration"],
-    link: "https://console.dialogflow.com/api-client/demo/embedded/61d17128-9438-4e1d-966e-7f7f06e8a978"
+    link: "https://console.dialogflow.com/api-client/demo/embedded/61d17128-9438-4e1d-966e-7f7f06e8a978",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
   },
   {
     title: "Project Coming Soon",
@@ -74,6 +82,15 @@ const WorkSamples = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {workItems.map((item, index) => (
             <Card key={index} className={`overflow-hidden transition-all hover:shadow-md ${item.comingSoon ? 'opacity-75' : ''}`}>
+              {item.image && !item.comingSoon && (
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
               <CardHeader className="bg-muted/50">
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
