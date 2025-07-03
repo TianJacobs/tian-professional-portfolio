@@ -18,28 +18,28 @@ const workItems: WorkItem[] = [
     description: "Developed a comprehensive math solver web application with frontend hosted on Vercel and backend on Render. Features include solving various mathematical equations, providing step-by-step solutions, and a history feature to track previous calculations for enhanced user experience.",
     tags: ["Frontend Development", "Backend Development", "Vercel", "Render", "Math Algorithms", "History Feature"],
     link: "https://math-solver2.vercel.app/",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+    image: "/lovable-uploads/700ea3c4-79e7-41d8-8cd7-9cbf27fc3548.png"
   },
   {
     title: "Resume Generator",
     description: "Built a comprehensive resume generator application that allows users to create professional resumes using multiple templates (modern, classic, minimal, or creative). Features include real-time preview functionality and downloadable PDF generation for enhanced user experience.",
     tags: ["React", "PDF Generation", "Template Design", "Vercel", "Resume Builder", "Modern UI"],
     link: "https://resume-generator-eta-lime.vercel.app/",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    image: "/lovable-uploads/b0caae1b-ed9d-40a0-a4cc-c914fdb8b141.png"
   },
   {
     title: "AI Image Generator",
     description: "Developed an AI-powered image generation application that creates unique images based on text prompts. Features modern UI design with real-time image generation capabilities and user-friendly interface for creative content creation.",
     tags: ["AI", "Image Generation", "React", "API Integration", "Modern UI", "Creative Tools"],
     link: "https://ai-image-generator-five-rouge.vercel.app/",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    image: "/lovable-uploads/4a48adf2-fe4f-44fd-b80d-6dbc7d7fb12c.png"
   },
   {
     title: "Sentiment Analysis Dashboard",
     description: "Built a comprehensive sentiment analysis dashboard that analyzes text input and provides detailed sentiment insights. Features interactive data visualization, real-time analysis, and user-friendly interface for understanding emotional tone in text data.",
     tags: ["Data Analysis", "Sentiment Analysis", "Dashboard", "Data Visualization", "React", "Analytics"],
     link: "https://sentiment-dashboard-app-dsf5.vercel.app/",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+    image: "/lovable-uploads/7f51b6c5-15e2-4220-9672-130075b59076.png"
   },
   {
     title: "Tech Titans Website",
@@ -53,7 +53,7 @@ const workItems: WorkItem[] = [
     description: "Collaborated with my Tech Titans team to design and build a comprehensive mock-up of a virtual health assistant mobile application using Mockplus. The prototype demonstrates user-friendly interfaces for health monitoring, appointment scheduling, and AI-powered health consultations.",
     tags: ["Mockplus", "UI/UX Design", "Mobile App Prototype", "Healthcare Technology", "Team Collaboration"],
     link: "https://rp.mockplus.com/run/KD0aLF4xJD/CsQvqgHSeC/1Q73yrA5qw?cps=expand&rps=expand&nav=1&ha=0&la=0&fc=1&dt=iphone&out=0&rt=1&as=true",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    image: "/lovable-uploads/434b8d0f-4c28-4506-936c-584e303fa04d.png"
   },
   {
     title: "Intelligent Chatbot with Dialogflow",
