@@ -83,11 +83,11 @@ const WorkSamples = () => {
           {workItems.map((item, index) => (
             <Card key={index} className={`overflow-hidden transition-all hover:shadow-md ${item.comingSoon ? 'opacity-75' : ''}`}>
               {item.image && !item.comingSoon && (
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden bg-muted">
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               )}
