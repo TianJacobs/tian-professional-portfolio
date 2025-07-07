@@ -60,7 +60,7 @@ const workItems: WorkItem[] = [
     description: "Built an intelligent chatbot using Dialogflow Essentials for natural language processing and intent recognition. Integrated Firebase to handle all query requests from users by matching the intents created in Dialogflow Essentials, providing seamless conversational experiences.",
     tags: ["Dialogflow Essentials", "Firebase", "Natural Language Processing", "Intent Recognition", "Cloud Integration"],
     link: "https://console.dialogflow.com/api-client/demo/embedded/61d17128-9438-4e1d-966e-7f7f06e8a978",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+    image: "/lovable-uploads/bf4b3e54-f8a1-4e45-8e3c-0a4d8f7e1b59.png"
   },
   {
     title: "Project Coming Soon",
