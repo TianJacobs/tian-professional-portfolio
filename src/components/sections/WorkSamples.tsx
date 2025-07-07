@@ -1,4 +1,3 @@
-
 import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -46,7 +45,7 @@ const workItems: WorkItem[] = [
     description: "Developed a professional website using Profreehost domain hosting and WordPress for layout design. Leveraged AI tools for content creation and design optimization, then integrated a custom chatbot using CSS and JavaScript plugins to enhance user interaction and engagement.",
     tags: ["WordPress", "CSS", "JavaScript", "AI Integration", "Chatbot Development"],
     link: "https://techtitans.liveblog365.com/?i=1",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+    image: "/lovable-uploads/98237d8c-0ef7-448a-a5c3-383bc8b2f61a.png"
   },
   {
     title: "Virtual Health Assistant App Prototype",
