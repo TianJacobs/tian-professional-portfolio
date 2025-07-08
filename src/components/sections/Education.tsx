@@ -1,4 +1,3 @@
-
 import { Book, Award, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -7,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const educationItems = [
   {
     degree: "BSc in Mathematical Sciences",
-    institution: "Stellenbosch University",
+    institution: "Stellenbosch University", 
     duration: "Completed 2023",
     description: "Comprehensive degree in mathematical sciences with focus on mathematical foundations, analytical problem solving, and quantitative reasoning.",
     gpa: "3.0/4.0",
@@ -176,6 +175,13 @@ const certificationsRaw = [
     date: "June 30, 2025",
     description: "Comprehensive course on personal branding strategies and professional identity development.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Introduction%20to%20Personal%20Branding.pdf?alt=media&token=4ca35562-634d-48db-bcd1-3656c32831d2"
+  },
+  {
+    name: "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+    issuer: "Johns Hopkins University",
+    date: "July 8, 2025",
+    description: "Advanced course on AI ethics, bias management, and accountability frameworks for responsible AI development and deployment.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Trustworthy%20AI.pdf?alt=media&token=7fb2c59b-839c-4a65-9cbd-9caa23e00ccf"
   }
 ];
 

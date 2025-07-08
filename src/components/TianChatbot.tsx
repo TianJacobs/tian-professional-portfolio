@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Send, X, User, Bot, ExternalLink } from 'lucide-react';
 
@@ -94,6 +93,7 @@ const TianChatbot = () => {
       { name: "Foundations of AI and Python Development", provider: "CAPACITI", date: "June 23, 2025", category: "AI" },
       { name: "AI and Climate Change", provider: "DeepLearning.AI", date: "June 26, 2025", category: "AI" },
       { name: "AI and Disaster Management", provider: "DeepLearning.AI", date: "June 27, 2025", category: "AI" },
+      { name: "Trustworthy AI: Managing Bias, Ethics, and Accountability", provider: "Johns Hopkins University", date: "July 8, 2025", category: "AI" },
       { name: "Verbal Communication and Presentation Skills", provider: "Starweaver", date: "May 19, 2025", category: "Communication" },
       { name: "Writing Professional Emails in English", provider: "Georgia Institute of Technology", date: "May 19, 2025", category: "Communication" },
       { name: "Active Listening", provider: "Coursera", date: "May 30, 2025", category: "Communication" },
@@ -185,7 +185,7 @@ const TianChatbot = () => {
       
       return {
         type: 'certificates',
-        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (12 certificates):**\n${aiCerts}\n\n**Communication Skills (7 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 23 certificates completed between May-June 2025`
+        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (13 certificates):**\n${aiCerts}\n\n**Communication Skills (7 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 24 certificates completed between May-July 2025`
       };
     }
 
@@ -201,7 +201,7 @@ const TianChatbot = () => {
     if (q.includes('ai') || q.includes('data') || q.includes('python') || q.includes('machine learning')) {
       return {
         type: 'ai_expertise',
-        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 12 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, IBM, and CAPACITI\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• AI and Public Health applications\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
+        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 13 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, IBM, Johns Hopkins University, and CAPACITI\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• AI ethics and bias management\n• Trustworthy AI development\n• AI and Public Health applications\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
       };
     }
 
