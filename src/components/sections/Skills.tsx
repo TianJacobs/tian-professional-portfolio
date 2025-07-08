@@ -1,5 +1,3 @@
-
-
 import { Star } from "lucide-react";
 
 interface SkillCategory {
@@ -18,7 +16,7 @@ const skillCategories: SkillCategory[] = [
       { name: "R Studio", level: "Intermediate" },
       { name: "Java", level: "Intermediate" },
       { name: "Python", level: "Intermediate" },
-      { name: "Microsoft SQL", level: "Beginner" },
+      { name: "Microsoft SQL Server Management Studio (SSMS)", level: "Beginner" },
       { name: "Tableau", level: "Beginner" },
     ]
   },
@@ -73,4 +71,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
