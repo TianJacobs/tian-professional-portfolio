@@ -1,3 +1,4 @@
+
 import { Book, Award, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -175,6 +176,41 @@ const certificationsRaw = [
     date: "June 30, 2025",
     description: "Comprehensive course on personal branding strategies and professional identity development.",
     link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Introduction%20to%20Personal%20Branding.pdf?alt=media&token=4ca35562-634d-48db-bcd1-3656c32831d2"
+  },
+  {
+    name: "Artificial Intelligence on Microsoft Azure",
+    issuer: "Microsoft",
+    date: "July 3, 2025",
+    description: "Comprehensive course on implementing AI solutions using Microsoft Azure cloud platform.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Artificial%20Intelligence%20on%20Microsoft%20Azure.pdf?alt=media&token=809f193a-ca4a-434b-98e7-679f00e915e2"
+  },
+  {
+    name: "Machine Learning Foundations for Product Managers",
+    issuer: "Duke University",
+    date: "July 3, 2025",
+    description: "Specialized course on machine learning fundamentals for product management and strategic decision-making.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Machine%20Learning%20Foundations%20for%20Product.pdf?alt=media&token=42ee8d9e-88bb-493d-8d02-207f00373ff5"
+  },
+  {
+    name: "Managing Machine Learning Projects",
+    issuer: "Duke University",
+    date: "July 6, 2025",
+    description: "Advanced course on project management principles and best practices for machine learning initiatives.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20%20-%20Managing%20Machine%20Learning%20Projects.pdf?alt=media&token=fb984112-71a8-409c-b8d3-42a7a02dc3a5"
+  },
+  {
+    name: "Human Factors in AI",
+    issuer: "Duke University",
+    date: "July 7, 2025",
+    description: "Specialized course on human-computer interaction principles and user experience considerations in AI system design.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Human%20Factors%20in%20AI.pdf?alt=media&token=77a62683-dce0-4304-af55-b10d3607c381"
+  },
+  {
+    name: "Leading with Impact: Team Dynamics, Strategy and Ethics",
+    issuer: "Coursera Instructor Network",
+    date: "July 7, 2025",
+    description: "Comprehensive leadership course covering team management, strategic thinking, and ethical decision-making.",
+    link: "https://firebasestorage.googleapis.com/v0/b/dialogflow-chatbot-75b84.firebasestorage.app/o/Coursera%20Certificate%20-%20Leading%20with%20Impact(Team%20Dynamics%2C%20Strategy%2CEthics).pdf?alt=media&token=3f882815-004f-431b-a7b3-27877e3aad8f"
   },
   {
     name: "Trustworthy AI: Managing Bias, Ethics, and Accountability",

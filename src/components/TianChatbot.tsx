@@ -93,6 +93,10 @@ const TianChatbot = () => {
       { name: "Foundations of AI and Python Development", provider: "CAPACITI", date: "June 23, 2025", category: "AI" },
       { name: "AI and Climate Change", provider: "DeepLearning.AI", date: "June 26, 2025", category: "AI" },
       { name: "AI and Disaster Management", provider: "DeepLearning.AI", date: "June 27, 2025", category: "AI" },
+      { name: "Artificial Intelligence on Microsoft Azure", provider: "Microsoft", date: "July 3, 2025", category: "AI" },
+      { name: "Machine Learning Foundations for Product Managers", provider: "Duke University", date: "July 3, 2025", category: "AI" },
+      { name: "Managing Machine Learning Projects", provider: "Duke University", date: "July 6, 2025", category: "AI" },
+      { name: "Human Factors in AI", provider: "Duke University", date: "July 7, 2025", category: "AI" },
       { name: "Trustworthy AI: Managing Bias, Ethics, and Accountability", provider: "Johns Hopkins University", date: "July 8, 2025", category: "AI" },
       { name: "Verbal Communication and Presentation Skills", provider: "Starweaver", date: "May 19, 2025", category: "Communication" },
       { name: "Writing Professional Emails in English", provider: "Georgia Institute of Technology", date: "May 19, 2025", category: "Communication" },
@@ -101,6 +105,7 @@ const TianChatbot = () => {
       { name: "Emotional Intelligence", provider: "Arizona State University", date: "June 17, 2025", category: "Communication" },
       { name: "Finding Your Professional Voice", provider: "University of London", date: "June 23, 2025", category: "Communication" },
       { name: "Introduction to Personal Branding", provider: "University of Virginia", date: "June 30, 2025", category: "Communication" },
+      { name: "Leading with Impact: Team Dynamics, Strategy and Ethics", provider: "Coursera Instructor Network", date: "July 7, 2025", category: "Communication" },
       { name: "Time Management for Personal & Professional Productivity", provider: "Division of Continuing Education", date: "June 13, 2025", category: "Professional Development" },
       { name: "Work Readiness", provider: "YES (Youth Employment Service)", date: "June 16, 2025", category: "Professional Development" },
       { name: "Digital Learning", provider: "YES (Youth Employment Service)", date: "June 17, 2025", category: "Professional Development" },
@@ -185,7 +190,7 @@ const TianChatbot = () => {
       
       return {
         type: 'certificates',
-        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (13 certificates):**\n${aiCerts}\n\n**Communication Skills (7 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 24 certificates completed between May-July 2025`
+        content: `**Professional Certificates** 🎓\n\n**AI & Data Science (17 certificates):**\n${aiCerts}\n\n**Communication Skills (8 certificates):**\n${commCerts}\n\n**Professional Development (4 certificates):**\n${profCerts}\n\n**Total:** 29 certificates completed between May-July 2025`
       };
     }
 
@@ -201,7 +206,7 @@ const TianChatbot = () => {
     if (q.includes('ai') || q.includes('data') || q.includes('python') || q.includes('machine learning')) {
       return {
         type: 'ai_expertise',
-        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 13 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, IBM, Johns Hopkins University, and CAPACITI\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• AI ethics and bias management\n• Trustworthy AI development\n• AI and Public Health applications\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
+        content: `**AI & Data Science Expertise** 🤖\n\n**Certifications:** 17 AI-related certificates from Intel, DeepLearning.AI, Google Cloud, AWS, IBM, Johns Hopkins University, Microsoft, Duke University, and CAPACITI\n\n**Key Skills:**\n• Python programming for data science\n• AI concepts and applications\n• Generative AI technologies\n• Large Language Models\n• AI ethics and bias management\n• Trustworthy AI development\n• AI and Public Health applications\n• Machine Learning project management\n• Microsoft Azure AI solutions\n• Human factors in AI design\n• Chatbot development\n• Data analysis with R Studio and MATLAB\n\n**Projects:** Built intelligent chatbots, AI-powered applications, and data analysis tools.`
       };
     }
 
