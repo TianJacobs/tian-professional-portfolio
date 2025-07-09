@@ -53,25 +53,41 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+      // Send to Formspree
+      const response = await fetch("https://formspree.io/f/mjkrqjer", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
       });
-      
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
         title: "Something went wrong",
-        description: "Please try again later.",
+        description: "Please try again later or contact me directly.",
         variant: "destructive",
       });
     } finally {
