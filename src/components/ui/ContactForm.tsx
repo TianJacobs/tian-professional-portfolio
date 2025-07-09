@@ -1,5 +1,6 @@
 
-import { useState } from "react";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,92 +9,26 @@ import { useToast } from "@/hooks/use-toast";
 
 const ContactForm = () => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [state, handleSubmit] = useForm("mjkrqjer");
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Basic validation
-    if (!formData.name.trim() || !formData.email.trim() || !formData.subject.trim() || !formData.message.trim()) {
+  // Show success message when form is successfully submitted
+  React.useEffect(() => {
+    if (state.succeeded) {
       toast({
-        title: "Please fill in all fields",
-        description: "All fields are required to send your message.",
-        variant: "destructive",
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
       });
-      return;
     }
+  }, [state.succeeded, toast]);
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      toast({
-        title: "Invalid email address",
-        description: "Please enter a valid email address.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      // Send to Formspree
-      const response = await fetch("https://formspree.io/f/mjkrqjer", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        }),
-      });
-
-      if (response.ok) {
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        });
-        
-        // Reset form
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        throw new Error("Failed to send message");
-      }
-    } catch (error) {
-      console.error("Form submission error:", error);
-      toast({
-        title: "Something went wrong",
-        description: "Please try again later or contact me directly.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  if (state.succeeded) {
+    return (
+      <div className="text-center p-8">
+        <h3 className="text-xl font-semibold mb-2">Thank you!</h3>
+        <p className="text-muted-foreground">Your message has been sent successfully. I'll get back to you soon.</p>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -105,9 +40,13 @@ const ContactForm = () => {
             name="name"
             placeholder="Your name"
             required
-            value={formData.name}
-            onChange={handleChange}
-            disabled={isSubmitting}
+            disabled={state.submitting}
+          />
+          <ValidationError 
+            prefix="Name" 
+            field="name"
+            errors={state.errors}
+            className="text-sm text-destructive"
           />
         </div>
         <div className="space-y-2">
@@ -118,9 +57,13 @@ const ContactForm = () => {
             type="email"
             placeholder="Your email"
             required
-            value={formData.email}
-            onChange={handleChange}
-            disabled={isSubmitting}
+            disabled={state.submitting}
+          />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+            className="text-sm text-destructive"
           />
         </div>
       </div>
@@ -132,9 +75,13 @@ const ContactForm = () => {
           name="subject"
           placeholder="Subject"
           required
-          value={formData.subject}
-          onChange={handleChange}
-          disabled={isSubmitting}
+          disabled={state.submitting}
+        />
+        <ValidationError 
+          prefix="Subject" 
+          field="subject"
+          errors={state.errors}
+          className="text-sm text-destructive"
         />
       </div>
 
@@ -146,18 +93,22 @@ const ContactForm = () => {
           placeholder="Your message"
           required
           rows={6}
-          value={formData.message}
-          onChange={handleChange}
-          disabled={isSubmitting}
+          disabled={state.submitting}
+        />
+        <ValidationError 
+          prefix="Message" 
+          field="message"
+          errors={state.errors}
+          className="text-sm text-destructive"
         />
       </div>
 
       <Button 
         type="submit" 
         className="w-full" 
-        disabled={isSubmitting}
+        disabled={state.submitting}
       >
-        {isSubmitting ? "Sending..." : "Send Message"}
+        {state.submitting ? "Sending..." : "Send Message"}
       </Button>
     </form>
   );
