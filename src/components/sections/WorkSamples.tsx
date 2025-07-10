@@ -1,8 +1,6 @@
 import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import StarBorder from "@/components/ui/StarBorder";
-import { useState } from "react";
 
 interface WorkItem {
   title: string;
@@ -72,8 +70,6 @@ const workItems: WorkItem[] = [
 ];
 
 const WorkSamples = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
     <section id="work">
       <div className="section-container">
@@ -84,103 +80,46 @@ const WorkSamples = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {workItems.map((item, index) => (
-            <div
-              key={index}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              className="relative"
-            >
-              {hoveredIndex === index && !item.comingSoon ? (
-                <StarBorder
-                  as="div"
-                  color="cyan"
-                  speed="5s"
-                  className="w-full"
-                >
-                  <Card className={`overflow-hidden transition-all hover:shadow-md ${item.comingSoon ? 'opacity-75' : ''}`}>
-                    {item.image && !item.comingSoon && (
-                      <div className="aspect-video overflow-hidden bg-muted">
-                        <img 
-                          src={item.image} 
-                          alt={item.title}
-                          className="w-full h-full object-cover object-center"
-                        />
-                      </div>
-                    )}
-                    <CardHeader className="bg-muted/50">
-                      <CardTitle>{item.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="pt-6">
-                      <CardDescription className="text-base mb-4">{item.description}</CardDescription>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {item.tags.map((tag, tagIndex) => (
-                          <span key={tagIndex} className={`text-xs px-2.5 py-1 rounded ${item.comingSoon ? 'bg-muted text-muted-foreground' : 'bg-secondary text-secondary-foreground'}`}>
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </CardContent>
-                    {item.link && !item.comingSoon && (
-                      <CardFooter>
-                        <Button variant="outline" size="sm" asChild>
-                          <a href={item.link} target="_blank" rel="noopener noreferrer">
-                            View Project
-                          </a>
-                        </Button>
-                      </CardFooter>
-                    )}
-                    {item.comingSoon && (
-                      <CardFooter>
-                        <Button variant="outline" size="sm" disabled>
-                          Coming Soon
-                        </Button>
-                      </CardFooter>
-                    )}
-                  </Card>
-                </StarBorder>
-              ) : (
-                <Card className={`overflow-hidden transition-all hover:shadow-md ${item.comingSoon ? 'opacity-75' : ''}`}>
-                  {item.image && !item.comingSoon && (
-                    <div className="aspect-video overflow-hidden bg-muted">
-                      <img 
-                        src={item.image} 
-                        alt={item.title}
-                        className="w-full h-full object-cover object-center"
-                      />
-                    </div>
-                  )}
-                  <CardHeader className="bg-muted/50">
-                    <CardTitle>{item.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="pt-6">
-                    <CardDescription className="text-base mb-4">{item.description}</CardDescription>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {item.tags.map((tag, tagIndex) => (
-                        <span key={tagIndex} className={`text-xs px-2.5 py-1 rounded ${item.comingSoon ? 'bg-muted text-muted-foreground' : 'bg-secondary text-secondary-foreground'}`}>
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-                  {item.link && !item.comingSoon && (
-                    <CardFooter>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={item.link} target="_blank" rel="noopener noreferrer">
-                          View Project
-                        </a>
-                      </Button>
-                    </CardFooter>
-                  )}
-                  {item.comingSoon && (
-                    <CardFooter>
-                      <Button variant="outline" size="sm" disabled>
-                        Coming Soon
-                      </Button>
-                    </CardFooter>
-                  )}
-                </Card>
+            <Card key={index} className={`overflow-hidden transition-all hover:shadow-md ${item.comingSoon ? 'opacity-75' : ''}`}>
+              {item.image && !item.comingSoon && (
+                <div className="aspect-video overflow-hidden bg-muted">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
               )}
-            </div>
+              <CardHeader className="bg-muted/50">
+                <CardTitle>{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <CardDescription className="text-base mb-4">{item.description}</CardDescription>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {item.tags.map((tag, tagIndex) => (
+                    <span key={tagIndex} className={`text-xs px-2.5 py-1 rounded ${item.comingSoon ? 'bg-muted text-muted-foreground' : 'bg-secondary text-secondary-foreground'}`}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+              {item.link && !item.comingSoon && (
+                <CardFooter>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      View Project
+                    </a>
+                  </Button>
+                </CardFooter>
+              )}
+              {item.comingSoon && (
+                <CardFooter>
+                  <Button variant="outline" size="sm" disabled>
+                    Coming Soon
+                  </Button>
+                </CardFooter>
+              )}
+            </Card>
           ))}
         </div>
       </div>
