@@ -1,7 +1,6 @@
-import { Briefcase, Sparkles, Clock } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import StarBorder from "@/components/ui/StarBorder";
 
 interface WorkItem {
   title: string;
@@ -81,114 +80,46 @@ const WorkSamples = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {workItems.map((item, index) => (
-            <div key={index} className="group">
-              {item.comingSoon ? (
-                <Card className="overflow-hidden transition-all relative bg-gradient-to-br from-card via-card/80 to-muted/30 border-primary/20">
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 opacity-50" />
-                  <CardHeader className="relative z-10 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent">
-                    <div className="flex items-center gap-2">
-                      <Sparkles className="h-5 w-5 text-primary animate-pulse" />
-                      <CardTitle className="text-primary">{item.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="pt-6 relative z-10">
-                    <CardDescription className="text-base mb-4 text-muted-foreground/80">
-                      {item.description}
-                    </CardDescription>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {item.tags.map((tag, tagIndex) => (
-                        <span key={tagIndex} className="text-xs px-2.5 py-1 rounded bg-primary/10 text-primary border border-primary/20">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-                  <CardFooter className="relative z-10">
-                    <Button variant="outline" size="sm" disabled className="bg-muted/50 border-primary/30 text-primary/70">
-                      <Clock className="h-4 w-4 mr-2" />
-                      Coming Soon
-                    </Button>
-                  </CardFooter>
-                </Card>
-              ) : (
-                <StarBorder
-                  as="div"
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  color="hsl(217.2, 91.2%, 59.8%)"
-                  speed="4s"
-                >
-                  <Card className="overflow-hidden transition-all hover:shadow-md border-0 bg-transparent">
-                    {item.image && (
-                      <div className="aspect-video overflow-hidden bg-muted">
-                        <img 
-                          src={item.image} 
-                          alt={item.title}
-                          className="w-full h-full object-cover object-center"
-                        />
-                      </div>
-                    )}
-                    <CardHeader className="bg-muted/50">
-                      <CardTitle>{item.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="pt-6">
-                      <CardDescription className="text-base mb-4">{item.description}</CardDescription>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {item.tags.map((tag, tagIndex) => (
-                          <span key={tagIndex} className="text-xs px-2.5 py-1 rounded bg-secondary text-secondary-foreground">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </CardContent>
-                    {item.link && (
-                      <CardFooter>
-                        <Button variant="outline" size="sm" asChild>
-                          <a href={item.link} target="_blank" rel="noopener noreferrer">
-                            View Project
-                          </a>
-                        </Button>
-                      </CardFooter>
-                    )}
-                  </Card>
-                </StarBorder>
+            <Card key={index} className={`overflow-hidden transition-all hover:shadow-md ${item.comingSoon ? 'opacity-75' : ''}`}>
+              {item.image && !item.comingSoon && (
+                <div className="aspect-video overflow-hidden bg-muted">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
               )}
-              
-              {!item.comingSoon && (
-                <Card className="overflow-hidden transition-all hover:shadow-md group-hover:opacity-0">
-                  {item.image && (
-                    <div className="aspect-video overflow-hidden bg-muted">
-                      <img 
-                        src={item.image} 
-                        alt={item.title}
-                        className="w-full h-full object-cover object-center"
-                      />
-                    </div>
-                  )}
-                  <CardHeader className="bg-muted/50">
-                    <CardTitle>{item.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="pt-6">
-                    <CardDescription className="text-base mb-4">{item.description}</CardDescription>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {item.tags.map((tag, tagIndex) => (
-                        <span key={tagIndex} className="text-xs px-2.5 py-1 rounded bg-secondary text-secondary-foreground">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-                  {item.link && (
-                    <CardFooter>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={item.link} target="_blank" rel="noopener noreferrer">
-                          View Project
-                        </a>
-                      </Button>
-                    </CardFooter>
-                  )}
-                </Card>
+              <CardHeader className="bg-muted/50">
+                <CardTitle>{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <CardDescription className="text-base mb-4">{item.description}</CardDescription>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {item.tags.map((tag, tagIndex) => (
+                    <span key={tagIndex} className={`text-xs px-2.5 py-1 rounded ${item.comingSoon ? 'bg-muted text-muted-foreground' : 'bg-secondary text-secondary-foreground'}`}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+              {item.link && !item.comingSoon && (
+                <CardFooter>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      View Project
+                    </a>
+                  </Button>
+                </CardFooter>
               )}
-            </div>
+              {item.comingSoon && (
+                <CardFooter>
+                  <Button variant="outline" size="sm" disabled>
+                    Coming Soon
+                  </Button>
+                </CardFooter>
+              )}
+            </Card>
           ))}
         </div>
       </div>
