@@ -1,6 +1,7 @@
 import { Briefcase } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import StarBorder from "@/components/ui/StarBorder";
 
 interface WorkItem {
   title: string;
@@ -105,11 +106,17 @@ const WorkSamples = () => {
               </CardContent>
               {item.link && !item.comingSoon && (
                 <CardFooter>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={item.link} target="_blank" rel="noopener noreferrer">
-                      View Project
-                    </a>
-                  </Button>
+                  <StarBorder
+                    as="a"
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="cyan"
+                    speed="4s"
+                    className="no-underline"
+                  >
+                    View Project
+                  </StarBorder>
                 </CardFooter>
               )}
               {item.comingSoon && (
