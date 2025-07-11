@@ -51,7 +51,7 @@ const About = () => {
               gridSize={8}
               pixelColor="#3b82f6"
               animationStepDuration={0.4}
-              className="w-full max-w-2xl mx-auto"
+              className="w-full max-w-xl mx-auto"
               aspectRatio="100%"
             />
           </div>
