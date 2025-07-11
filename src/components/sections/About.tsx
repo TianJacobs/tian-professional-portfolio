@@ -1,6 +1,7 @@
 
 import { User } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import PixelTransition from "@/components/ui/PixelTransition";
 
 const About = () => {
   return (
@@ -32,13 +33,27 @@ const About = () => {
           </div>
           
           <div className="flex items-center justify-center">
-            <div className="w-full max-w-md aspect-square rounded-lg overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                alt="Professional headshot placeholder"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <PixelTransition
+              firstContent={
+                <img 
+                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                  alt="Professional headshot placeholder"
+                  className="w-full h-full object-cover rounded-[15px]"
+                />
+              }
+              secondContent={
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                  alt="Working on laptop"
+                  className="w-full h-full object-cover rounded-[15px]"
+                />
+              }
+              gridSize={8}
+              pixelColor="#3b82f6"
+              animationStepDuration={0.4}
+              className="w-full max-w-md mx-auto"
+              aspectRatio="100%"
+            />
           </div>
         </div>
       </div>
