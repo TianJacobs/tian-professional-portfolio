@@ -32,11 +32,12 @@ const About = () => {
           </div>
           
           <div className="flex items-center justify-center">
-            <div className="w-full max-w-md aspect-square bg-muted border-2 border-dashed border-border rounded-lg flex items-center justify-center">
-              <div className="text-center space-y-2">
-                <User className="h-16 w-16 mx-auto text-muted-foreground" />
-                <p className="text-muted-foreground text-sm">Your picture will go here</p>
-              </div>
+            <div className="w-full max-w-md aspect-square rounded-lg overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                alt="Professional headshot placeholder"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
