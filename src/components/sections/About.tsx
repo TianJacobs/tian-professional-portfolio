@@ -36,14 +36,14 @@ const About = () => {
             <PixelTransition
               firstContent={
                 <img 
-                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                  alt="Professional headshot placeholder"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Professional headshot"
                   className="w-full h-full object-cover rounded-[15px]"
                 />
               }
               secondContent={
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Working on laptop"
                   className="w-full h-full object-cover rounded-[15px]"
                 />
@@ -51,7 +51,7 @@ const About = () => {
               gridSize={8}
               pixelColor="#3b82f6"
               animationStepDuration={0.4}
-              className="w-full max-w-md mx-auto"
+              className="w-full max-w-lg mx-auto"
               aspectRatio="100%"
             />
           </div>
